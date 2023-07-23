@@ -72,6 +72,8 @@ export async function POST(
         colorId,
         sizeId,
         storeId: params.storeId,
+        isFeatured,
+        isArchived,
         images: {
           createMany: {
             data: [...images.map((image: { url: string }) => image)],
